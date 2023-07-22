@@ -12,49 +12,53 @@ Gold dark 3: #7D6F2C
 
 */
 :root {
-    --color-primary: #65B5CB;
-    --color-primary-light: #BCE5F0;
-    --color-primary-dark: #143449;
+  --color-primary: #65b5cb;
+  --color-primary-light: #bce5f0;
+  --color-primary-dark: #143449;
 
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f4f2f2;
-    --color-grey-light-3: #f0eeee;
-    --color-grey-light-4: #F2F2F2;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #d9d9d9;
 
-    --color-grey-dark-1: #323031;
-    --color-grey-dark-2: #777;
+  --color-grey-dark-1: #323031; // my dark grey
+  --color-grey-dark-2: #777; // j
+  --color-grey-dark-3: #999; // j too
 
-    --gold-dark-3: #7D6F2C;
+  --gold-dark-3: #7d6f2c;
 
-    --shadow-dark: 8 2rem 6rem rgba(0,0,0,.3);
-
+  --shadow-dark: 8 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    // global reset to inherit box-sizing: border-box;
-    box-sizing: inherit;
+  // global reset to inherit box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    // 10px / 16px = 62.5%
-    font-size: 62.5%; // for that nice 10px to 1rem conversion
+  box-sizing: border-box;
+  // 10px / 16px = 62.5%
+  font-size: 62.5%; // for that nice 10px to 1rem conversion
 }
 
 body {
-    // use Open Sans or sans-serif
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-grey-dark-2);
-    background: linear-gradient(to right bottom, var(--color-primary-light) 0.22%, var(--color-primary-dark) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  // use Open Sans or sans-serif
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background: linear-gradient(
+    to right bottom,
+    var(--color-primary-light) 0.22%,
+    var(--color-primary-dark) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
