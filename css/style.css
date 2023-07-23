@@ -66,7 +66,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,7 +208,7 @@ body {
   width: 3px;
   background-color: var(--color-primary);
   transform: scaleY(0);
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  transition: transform 0.1s, width 0.1s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.1s;
 }
 .side-nav__item:hover::before, .side-nav__item-active::before {
   transform: scaleY(1);
@@ -240,6 +240,76 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+}
+
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  background-color: #fff;
+}
+.overview__about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.overview__about--heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 3rem 0 2rem;
+}
+.overview__about--description {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 0 0.5rem 1rem 2rem;
+}
+.overview__progress {
+  margin-left: auto;
+  margin-right: 0;
+}
+.overview__progress-bar {
+  height: 36px;
+  width: 350px;
+  border-radius: 100px;
+  background-color: var(--color-grey-dark-3);
+  position: relative;
+}
+.overview__progress-bar--completed {
+  height: 36px;
+  background-color: var(--color-secondary);
+  transition: all 0.3s linear;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.overview__info-box {
+  background-color: var(--color-secondary);
+  color: #fff;
+  margin-left: 3rem;
+  padding: 0 2.25rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overview__info-box-percentage {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+.overview__info-box-ticket-count {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
