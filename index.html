@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-    <title>trillo &mdash; Your all-in-one booking app</title>
+    <title>willow &mdash; Your all-in-one project app</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <img src="img/willhouse-icon.png" alt="Willhouse icon" class="logo" />
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Search" />
           <button class="search__button">
@@ -45,7 +45,45 @@
         </nav>
       </header>
       <div class="content">
-        <nav class="sidebar">Navigation</nav>
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__items">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use
+                    xlink:href="img/willow-sprite.svg#icon-wico-lighthouse"
+                  ></use>
+                </svg>
+                <span>PROJECTS</span>
+              </a>
+            </li>
+            <li class="side-nav__items">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/willow-sprite.svg#icon-wico-cap"></use>
+                </svg>
+                <span>TICKETS</span>
+              </a>
+            </li>
+            <li class="side-nav__items">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/all-sprite.svg#icon-heart"></use>
+                </svg>
+                <span>TEAM</span>
+              </a>
+            </li>
+            <li class="side-nav__items">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/all-sprite.svg#icon-calendar"></use>
+                </svg>
+                <span>CALENDAR</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">&copy; 2023 Willhouse. All rights reserved.</div>
+        </nav>
         <main class="project-view">Project View</main>
       </div>
     </div>

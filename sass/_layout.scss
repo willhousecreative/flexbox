@@ -24,11 +24,19 @@
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
+
   flex: 0 0 18%; // don't grow, don't shrink, just keep it at 18%
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-view {
   background-color: var(--color-grey-light-4);
   flex: 1; // element should grow as much as it can
   color: #000000;
+
+  // test
+  height: 80rem;
 }
